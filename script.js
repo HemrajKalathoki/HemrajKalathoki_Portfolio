@@ -10,6 +10,9 @@ const closeMenu = () => {
       sideMenu.style.transform = 'translateX(16rem)';
 }
 
+document.getElementById("current-year").textContent =
+    new Date().getFullYear();
+
 window.addEventListener('scroll', () => {
       if (scrollY > 50) {
             navbar.classList.add('bg-white/50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-black/20');
